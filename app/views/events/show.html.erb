@@ -1,0 +1,12 @@
+<%=@event.date %>
+
+<%=@event.location %>
+
+<%=@event.description %>
+
+<%=@event.capacity %>
+
+<%=@event.requires_id %>
+
+<%=link_to "Edit", edit_event_path(@event) %>
+<%=link_to "Delete", event_path(@event), method: :delete %>

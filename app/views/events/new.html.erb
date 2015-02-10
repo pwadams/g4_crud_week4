@@ -1,0 +1,29 @@
+<%= form_for @event do |f| %>
+  <div>
+    <%= f.label :Date  %>
+    <%= f.date_field :Date %>
+  </div>
+
+  <div>
+    <%= f.label :Location %>
+    <%= f.text_field :Location %>
+  </div>
+
+  <div>
+    <%= f.label :Description %>
+    <%= f.text_area :Description %>
+  </div>
+
+  <div>
+    <%= f.label :Capacity%>
+    <%= f.number_field :Capacity %>
+  </div>
+
+  <div>
+    <%= f.label :Requires_id %>
+    <%= f.text_field :Requires_id %>
+  </div>
+
+  <%= f.submit "Create Event" %>
+<% end %>
+<%=link_to "Back", events_path %>
